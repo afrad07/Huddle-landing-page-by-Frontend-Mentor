@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+body {
+  background-image: url(images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+nav {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+nav img {
+  width: 230px;
+}
+
+.hero-sec {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-sec img {
+  margin-left: 50px;
+  width: 715px;
+  margin-top: 30px;
+}
+
+.text-cont{
+  margin-left: 30px;
+}
+
+.hero-sec h1 {
+  font-family: Poppins;
+  color: white;
+  padding-right: 141px;
+  margin-top: 70px;
+}
+
+.hero-sec p {
+  font-family: Open Sans;
+  color: white;
+  padding-right: 81px;
+}
+
+.hero-sec button {
+  background-color: white;
+  border: none;
+  width: 170px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.671);
+  cursor: pointer;
+  font-family: poppins;
+  color: hsl(257, 40%, 49%);
+}
+
+.hero-sec button:active {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.socials {
+  float: right;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon:active {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  main {
+    margin-bottom: 50px;
+  }
+  nav {
+    margin-top: 20px;
+    margin-left: 20px
+  }
+
+  nav img {
+    width: 160px;
+  }
+
+  .hero-sec img {
+    width: 240px;
+    margin-top: 30px;
+    height: 180px;
+    margin-left: 0px;
+  }
+
+  .hero-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .text-cont{
+    margin-left: 0px;
+  }
+
+  .hero-sec h1 {
+    text-align: center;
+    padding-right: 0px;
+    font-size: 26px;
+    margin-top: 0px;
+  }
+
+  .hero-sec p {
+    text-align: center;
+    padding-right: 37px;
+    padding-left: 37px;
+    font-size: 15px
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .socials {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0px; 
+    margin-bottom: 0px;
+    float: none;
+    margin-top: 50px;
+  }
+}
